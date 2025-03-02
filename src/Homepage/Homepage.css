@@ -1,0 +1,52 @@
+/* src/Homepage.css */
+
+/* Import the Pathway Gothic One font */
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+
+.homepage {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the top of the page */
+  align-items: center; /* Horizontally center content */
+  height: 100vh; /* Full viewport height */
+  background-color: #f0f0f0; /* Light gray background */
+  padding: 20px;
+}
+
+.homepage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Align content to the top */
+  text-align: center;
+  background-color: #2f3061; /* Dark blue background */
+  width: 75%;
+  height: 18%;
+  padding: 20px 0px; /* Adjust padding for spacing */
+  margin-top: 0; /* Ensure no margin above */
+}
+
+.title h1 {
+  font-family: "Pathway Gothic One", sans-serif; /* Apply the imported font */
+  font-size: 10rem;
+  color: white; /* White text */
+  letter-spacing: 40px;
+  text-shadow: 4px 4px 0 #343434,
+    /* First shadow, thicker */ -2px -2px 0 #343434,
+    /* Second shadow, thicker */ 2px -2px 0 #343434,
+    /* Third shadow, thicker */ -2px 2px 0 #343434,
+    /* Fourth shadow, thicker */ 0px 0px 15px rgba(0, 0, 0, 0.7); /* Optional stronger glow effect */
+}
+
+/* Eye Section */
+.eye-section {
+  display: flex; /* Use flexbox for the image container */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin-top: 20px; /* Space between title and image */
+}
+
+.eye-image {
+  width: 60%; /* Adjust the size of the image */
+  height: auto;
+}
