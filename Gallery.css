@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap");
+
+.gallery {
+  display: flex; /* Use flexbox for the container */
+  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  gap: 0px; /* Space between items */
+  justify-content: center; /* Space items evenly */
+  margin-left: 9.5%;
+  margin-right: 9.5%;
+}
+
+.gallery-item {
+  display: flex; /* Use flexbox to arrange image and text side by side */
+  flex-direction: column; /* Stack the content vertically */
+  width: 30%; /* Each item takes up 30% of the container width */
+  background-color: #f0f6ef; /* White background for each item */
+  padding: 20px;
+  border: 1.5px solid #2f3061; /* Border with a dark color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  height: 600px; /* Set a fixed height for each item */
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px); /* Hover effect to lift the item */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.gallery-image {
+  width: 100%; /* Make image take full width of the container */
+  height: 400px; /* Fixed height for image */
+  object-fit: cover; /* Ensure the image covers the area without distorting */
+}
+
+.gallery-info {
+  text-align: left; /* Align text to the left */
+  margin-top: 15px; /* Space between the image and text */
+  flex-grow: 1; /* Allow text content to take up remaining space */
+}
+
+.gallery-info h4 {
+  color: #2f3061; /* Set a color for the date */
+  font-size: 1rem; /* Adjust font size */
+  font-family: "Inter", sans-serif; /* Apply Inter font */
+  font-weight: 30; /* Use the light version of the Inter font for a slim look */
+  font-size: 1rem; /* Adjust font size */
+}
+
+.gallery-info h3 {
+  color: #2f3061; /* Set a color for the title */
+  font-family: "Inter", sans-serif; /* Apply Inter font */
+  font-size: 2rem; /* Adjust font size */
+}
+
+.gallery-info p {
+  color: #333; /* Set a color for the paragraph */
+  font-size: 1rem; /* Adjust font size */
+  line-height: 1.5; /* Line height for readability */
+  font-family: "Instrument Serif", serif; /* Apply Instrument Serif font */
+}
+
+@media (max-width: 768px) {
+  .gallery-item {
+    width: 48%; /* 2 items per row on medium screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-item {
+    width: 100%; /* 1 item per row on small screens */
+  }
+}
