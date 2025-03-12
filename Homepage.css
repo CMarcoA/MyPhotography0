@@ -1,0 +1,95 @@
+/* src/Homepage.css */
+
+/* Import the Pathway Gothic One font */
+@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bahiana&display=swap");
+
+.homepage {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: flex-start; /* Align items to the top of the page */
+  align-items: center; /* Horizontally center content */
+  flex: 1;
+  background-color: #dfdfdf; /* Light gray background */
+  padding: 20px;
+}
+
+.homepage-header {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  text-align: center;
+  width: 80%;
+  margin-top: 10px; /* Ensure no margin above */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.title-container {
+  width: 100%; /* Ensure the title spans the same width as homepage-header */
+}
+
+.title h3 {
+  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 10rem;
+  color: #f0f6ef; /* White text */
+  letter-spacing: 50px;
+  background-color: #2f3061;
+  text-shadow: 4px 4px 0 #343434,
+    /* First shadow, thicker */ -2px -2px 0 #343434,
+    /* Second shadow, thicker */ 2px -2px 0 #343434,
+    /* Third shadow, thicker */ -2px 2px 0 #343434,
+    /* Fourth shadow, thicker */ 0px 0px 15px rgba(0, 0, 0, 0.7); /* Optional stronger glow effect */
+}
+
+/* Eye Section */
+.eye-section {
+  display: flex; /* Use flexbox for the image container */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin-top: 10px; /* Space between title and image */
+}
+
+.eye-image {
+  width: 60%; /* Adjust the size of the image */
+  height: auto;
+}
+
+/* */
+
+.panels-class {
+  display: flex; /* Flexbox to arrange the panels side by side */
+  justify-content: space-around; /* Space between the panels */
+  gap: 50px; /* Adjust the space between the two panels */
+  width: 80%;
+  margin-top: 40px; /* Add space between eye image and the panels */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+/* Style for individual panels */
+.panel {
+  flex: 1; /* Make each panel take up equal space */
+  background-color: #f0f6ef; /* White background */
+  padding: 20px; /* Padding inside the panels */
+  border: 1.5px solid #2f3061; /* Border with a dark color */
+  font-family: "Bahiana", sans-serif; /* Apply Bahiana font */
+  font-size: 1.5rem; /* Adjust font size */
+  color: #2f3061; /* Text color matching the navbar */
+  text-align: left; /* Left align text */
+  border-bottom: 20px solid #2f3061;
+}
+
+.panel p {
+  margin: 0; /* Remove margin from paragraphs */
+  line-height: 1.6; /* Line height for readability */
+}
+
+.line {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%; /* Make the line span across the whole container */
+  height: 5px; /* Height of the line */
+  background-color: #2f3061; /* Set the color of the line */
+  margin-top: 100px; /* Space above the line */
+  margin-bottom: 20px; /* Space below the line */
+}
