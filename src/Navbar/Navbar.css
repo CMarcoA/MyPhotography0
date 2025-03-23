@@ -1,0 +1,61 @@
+/* src/Navbar/Navbar.css */
+@import url("https://fonts.googleapis.com/css2?family=Bahiana&display=swap");
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Space between the logo, nav links, and social icons */
+  align-items: center; /* Vertically center the items */
+  padding: 10px;
+  border-bottom: 5px solid #2f3061;
+  flex: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 12px;
+}
+
+.navbar .logo {
+  font-size: 1.5rem;
+  color: #2f3061;
+  font-weight: bold;
+  font-family: "Bahiana", sans-serif; /* Apply Bahiana font */
+}
+
+.nav-links {
+  display: flex;
+  row-gap: 120;
+  list-style: none;
+  justify-content: space-between; /* Ensure there's space between the nav links and social icons */
+  width: 35%; /* To allow spacing between left and right sections */
+}
+
+.nav-links li {
+  margin: 0 15px; /* Spacing between the links */
+}
+
+.nav-links .nav-links-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  color: #2f3061;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: "Bahiana", sans-serif; /* Apply Bahiana font */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end; /* Align the icons to the right */
+  align-items: left;
+}
+
+.social-icons .social-icon {
+  margin-left: 15px; /* Spacing between icons */
+  color: rgb(255, 255, 255);
+  background-color: #2f3061;
+  font-size: 1.5rem; /* Icon size */
+}
+
+.social-icons .social-icon:hover {
+  color: #f0f0f0; /* Hover effect for icons */
+  background-color: #25264d;
+}
