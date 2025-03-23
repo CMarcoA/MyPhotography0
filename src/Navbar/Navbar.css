@@ -1,6 +1,10 @@
 /* src/Navbar/Navbar.css */
 @import url("https://fonts.googleapis.com/css2?family=Bahiana&display=swap");
 
+body {
+  background-color: aliceblue;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between; /* Space between the logo, nav links, and social icons */
@@ -11,6 +15,7 @@
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 12px;
+  position: static;
 }
 
 .navbar .logo {

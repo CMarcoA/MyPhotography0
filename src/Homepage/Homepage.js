@@ -7,6 +7,7 @@ import Gallery from "../Gallery/Gallery";
 function Homepage() {
   return (
     <div className="homepage">
+      <div className="spacer" style={{ height: "50px" }}></div>
       <div className="homepage-header">
         <h3>
           <div className="title">DAILY BUGLE</div>
@@ -32,7 +33,7 @@ function Homepage() {
             </p>
           </div>
         </div>
-
+        <div className="spacer" style={{ height: "50px" }}></div>
         <div className="line"></div>
         <Gallery></Gallery>
       </div>
