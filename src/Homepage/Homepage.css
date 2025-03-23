@@ -15,22 +15,17 @@
 }
 
 .homepage-header {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  text-align: center;
   width: 80%;
-  margin-top: 10px; /* Ensure no margin above */
-  margin-left: 10%;
-  margin-right: 10%;
 }
 
 .title-container {
   width: 100%; /* Ensure the title spans the same width as homepage-header */
 }
 
-.title h3 {
+.title {
   font-family: "Pathway Gothic One", sans-serif;
   font-size: 10rem;
+  text-align: center;
   color: #f0f6ef; /* White text */
   letter-spacing: 50px;
   background-color: #2f3061;

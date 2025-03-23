@@ -8,10 +8,9 @@ function Homepage() {
   return (
     <div className="homepage">
       <div className="homepage-header">
-        <div className="title">
-          <h3>DAILY BUGLE</h3>
-        </div>
-
+        <h3>
+          <div className="title">DAILY BUGLE</div>
+        </h3>
         <div className="eye-section">
           <img src={eyeImage} alt="Eye" className="eye-image" />
         </div>

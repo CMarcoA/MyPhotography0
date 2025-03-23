@@ -3,7 +3,7 @@
 
 .gallery {
   display: flex; /* Use flexbox for the container */
-  flex-wrap: wrap; /* Allow items to wrap to the next row */
+  flex-wrap: center; /* Allow items to wrap to the next row */
   gap: 0px; /* Space between items */
   justify-content: center; /* Space items evenly */
   margin-left: 9.5%;
